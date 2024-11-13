@@ -1,0 +1,120 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(3, 3, 45);
+    color: #333;
+  }
+  
+  
+  .age-calculator {
+    background: #fff;
+    padding: 40px;
+    border-radius: 9px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+    border-bottom-right-radius: 120px;
+  }
+  
+  .age-calculator:hover {
+    transform: translateY(-9px);
+    transition: 0.5s;
+  }
+  
+  /* Input section */
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    /* width: 100px;
+    text-align: left;
+    position: relative; */
+  }
+  
+  label {
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.2);
+  }
+  
+  .error-message {
+    font-size: 11px;
+    color: #ff6b6b;
+    margin-top: 4px;
+    display: none;
+  }
+  
+  /* Button styling */
+  button {
+    background: rgba(0, 0, 255, 0.518);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    /* background: linear-gradient(135deg, #5a60b9, #5e3b8a);    */
+    transform: scale(1.1);
+  }
+  
+  /* Output section */
+  .output-section {
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-size: 36px;
+    color: #764ba2;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 370px) {
+    .age-calculator {
+      width: 90%;
+    }
+  }
+  
